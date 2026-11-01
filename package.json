@@ -1,0 +1,15 @@
+{
+  "name": "ctf-wiki",
+  "private": true,
+  "version": "0.1.0",
+  "description": "CTF 知识字典 —— 按题型识别的知识体系与解题优先级",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
