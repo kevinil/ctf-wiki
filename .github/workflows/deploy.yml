@@ -28,6 +28,12 @@ jobs:
       - name: Install
         run: npm ci
 
+      # 如果 Pages 还没启用，这一步会自动把发布源设成 GitHub Actions
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
       - name: Lint docs
         run: |
           python3 scripts/lint_docs.py
